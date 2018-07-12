@@ -1,13 +1,15 @@
 extends layout
 
 block content
-  .modal#modalOne
+  .modal.modal-fixed-footer#modalOne
       .modal-content
         h4 I dare you
         p 
           | Dentro de esta página vas a encontrar preguntas que te van ayudar a conocer diferentes situaciones que me gustaría compartir contigo. #[br]
           | El tiempo no es suficiente para expresar todo lo que siento por ti. #[br] 
           | Espero y te guste lo que preparé para ti. #[br] Chochos #[i.material-icons favorite pets]  
+      .modal-footer
+        a.modal-close.waves-effect.waves-green.btn-flat(href="/part-one") Comenzar
   .section.no-pad-bot.scrollspy#home
     .container
       h4.header.center ¿Qué tan bien me conoces? 

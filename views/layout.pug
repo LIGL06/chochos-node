@@ -24,13 +24,13 @@ html
       li #[a(href="/part-one") Primera Parte]
       li #[a(href="/part-two") Segunda Parte]
   .navbar-fixed
-    nav
+    nav(style="z-index:9!important")
       .nav-wrapper.container
         a.brand-logo.light(href="/") #[= title] #[i.material-icons.hide-on-small-only pets]
         a.sidenav-trigger(href="#" data-target="mobile-demo" class="sidenav-trigger") #[i.material-icons menu]
         ul.right.hide-on-med-and-down
           li #[a(href="/part-one") Primera parte]
           li #[a(href="/part-one") Segunda parte] 
-    div(style="padding-top:150px")
+    div(style="padding-top:100px")
     block content
     

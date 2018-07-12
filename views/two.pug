@@ -1,3 +1,81 @@
 extends layout
 
 block content
+    .section#partTwo(style="z-index:-9!important")
+      .container
+        .row
+            h4.header.center Primer Test
+            h5.header.light.center Preguntas sobre mi, es opción multiple y sencillo de contestar, dalay.
+            .col.s12.l6
+            form#formOne(method="POST" action="/part-two")
+                .row
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Color favorito
+                            label.col.s6.l3 #[input(required name="color" type="radio" value="red")] #[span Rojo]
+                            label.col.s6.l3 #[input(required name="color" type="radio" value="green")] #[span Verde]
+                            label.col.s6.l3 #[input(required name="color" type="radio" value="blue")] #[span Azul]
+                            label.col.s6.l3 #[input(required name="color" type="radio" value="alpha")] #[span Alfa]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Libro favorito
+                            label.col.s6.l3 #[input(required name="book" type="radio" value="harrypotter")] #[span Harry Potter]
+                            label.col.s6.l3 #[input(required name="book" type="radio" value="twilight")] #[span Twilight]
+                            label.col.s6.l3 #[input(required name="book" type="radio" value="martian")] #[span The Martian]
+                            label.col.s6.l3 #[input(required name="book" type="radio" value="got")] #[span Game of Thrones]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Helado favorito
+                            label.col.s6.l3 #[input(required name="icecream" type="radio" value="cookies")] #[span Cookies]
+                            label.col.s6.l3 #[input(required name="icecream" type="radio" value="chocolate")] #[span Chocolate]
+                            label.col.s6.l3 #[input(required name="icecream" type="radio" value="strawberry")] #[span Fresas]
+                            label.col.s6.l3 #[input(required name="icecream" type="radio" value="all")] #[span Todos Alv.]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Mejor Amigo
+                            label.col.s6.l3 #[input(required name="bff" type="radio" value="kikiux")] #[span Kikiux]
+                            label.col.s6.l3 #[input(required name="bff" type="radio" value="julio")] #[span Julio]
+                            label.col.s6.l3 #[input(required name="bff" type="radio" value="chaverri")] #[span Chaverri]
+                            label.col.s6.l3 #[input(required name="bff" type="radio" value="all")] #[span Todos]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Canción favorita
+                            label.col.s6.l3 #[input(required name="song" type="radio" value="coldplay")] #[span Army of One - Coldplay]
+                            label.col.s6.l3 #[input(required name="song" type="radio" value="above")] #[span Sun & Moon - Above & Beyond]
+                            label.col.s6.l3 #[input(required name="song" type="radio" value="djawadi")] #[span Westworld - Ramin Djawadi]
+                            label.col.s6.l3 #[input(required name="song" type="radio" value="chvrches")] #[span Graffiti - CHVRCHES]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Lugar favorito
+                            label.col.s6.l3 #[input(required name="place" type="radio" value="movies")] #[span Cine]
+                            label.col.s6.l3 #[input(required name="place" type="radio" value="gym")] #[span Gym]
+                            label.col.s6.l3 #[input(required name="place" type="radio" value="xxx")] #[span Cama w. U]
+                            label.col.s6.l3 #[input(required name="place" type="radio" value="beach")] #[span Playa]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Pizza y Tacos con Piña
+                            label.col.s6.l3 #[input(required name="pineaple" type="radio" value="yes")] #[span Simio]
+                            label.col.s6.l3 #[input(required name="pineaple" type="radio" value="no")] #[span Nelson]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Pandita favorito
+                            label.col.s6.l3 #[input(required name="panditas" type="radio" value="red")] #[span Rojo]
+                            label.col.s6.l3 #[input(required name="panditas" type="radio" value="green")] #[span Verde]
+                            label.col.s6.l3 #[input(required name="panditas" type="radio" value="yellow")] #[span Amarillo]
+                            label.col.s6.l3 #[input(required name="panditas" type="radio" value="orange")] #[span Naranja]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Pandita favorito
+                            label.col.s6.l3 #[input(required name="moviedirector" type="radio" value="nolan")] #[span Cristopher Nolan]
+                            label.col.s6.l3 #[input(required name="moviedirector" type="radio" value="luhrmann")] #[span Baz Luhrmann]
+                            label.col.s6.l3 #[input(required name="moviedirector" type="radio" value="kubrick")] #[span Stanley Kubrick]
+                            label.col.s6.l3 #[input(required name="moviedirector" type="radio" value="tarantino")] #[span Quentin Tarantino]
+                    .radio.input-field.col.s12.row
+                        p
+                            label.col.s12 Si quiero saber todo de ti
+                            label.col.s6.l3 #[input(required name="knowall" type="radio" value="yes")] #[span Sí]
+                            label.col.s6.l3 #[input(required name="knowall" type="radio" value="yes")] #[span Obvio Sí]
+                            label.col.s6.l3 #[input(required name="knowall" type="radio" value="yes")] #[span Simón]
+                            label.col.s6.l3 #[input(required name="knowall" type="radio" value="yes")] #[span Simio]
+                    .col.s12(style="margin-top:20px")
+                        button.waves-effect.waves-green.btn(type="submit") Submit

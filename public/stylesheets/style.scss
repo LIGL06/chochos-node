@@ -8,3 +8,5 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "base") !default;
 @import 'node_modules/materialize-css/sass/materialize.scss';
+span{z-index:-9999!important;}
+
