@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .modal#modalOne
+      .modal-content
+        h4 I dare you
+        p 
+          | Dentro de esta página vas a encontrar preguntas que te van ayudar a conocer diferentes situaciones que me gustaría compartir contigo. #[br]
+          | El tiempo no es suficiente para expresar todo lo que siento por ti. #[br] 
+          | Espero y te guste lo que preparé para ti. #[br] Chochos #[i.material-icons favorite pets]  
+  .section.no-pad-bot.scrollspy#home
+    .container
+      h4.header.center ¿Qué tan bien me conoces? 
+      .row.center
+        h5.header.col.s12.light Picale al botón para saber qué hacer. 
+      .row.center
+        a.btn-large.waves-effect.waves-light.modal-trigger(href="#modalOne") Picame
+  script(type="text/javascript").
+    $(document).ready(function(){
+      $('.modal').modal();
+    });

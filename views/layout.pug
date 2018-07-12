@@ -1,7 +1,36 @@
 doctype html
 html
   head
-    title= title
+    meta(property="og:title" content="Test de chochos")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="https://ligl06.github.io/chochos")
+    meta(property="og:description" content="Te desafío a ser más feliz de lo que ya eres. (Es capcioso)")
+    meta(property="og:image" content="https://orig00.deviantart.net/fb94/f/2009/212/d/1/monkey_vector_by_mauriliodna.png")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js")
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js")
+    script(type="text/javascript").
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        $('.sidenav').sidenav({'draggable':true});
+      });
+    title= title
   body
+   ul#mobile-demo.sidenav
+      li #[a(href="/part-one") Primera Parte]
+      li #[a(href="/part-two") Segunda Parte]
+  .navbar-fixed
+    nav
+      .nav-wrapper.container
+        a.brand-logo.light(href="/") #[= title] #[i.material-icons.hide-on-small-only pets]
+        a.sidenav-trigger(href="#" data-target="mobile-demo" class="sidenav-trigger") #[i.material-icons menu]
+        ul.right.hide-on-med-and-down
+          li #[a(href="/part-one") Primera parte]
+          li #[a(href="/part-one") Segunda parte] 
+    div(style="padding-top:150px")
     block content
+    
