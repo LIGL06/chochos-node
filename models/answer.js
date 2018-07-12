@@ -1,9 +1,13 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
-    mongoUri = process.env.MONGODB_URI || 'mogodb://localhost/answers';
+    mongoUri = process.env.MONGODB_URI || 'mogodb://localhost:27017/answers';
 
-mongoose.connect(mongoUri, function (error) {
-    if (error) throw error
+mongoose.connect(mongoUri, {});
+
+mongoose.Promise = global.Promise;
+const db = mongoose.connection;
+db.once("open", () => {
+    console.log('Running...');
 });
 
 var answerSchema = new Schema({
