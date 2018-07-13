@@ -1,6 +1,6 @@
-var mongoose = require('mongoose'),
+const mongoose = require('mongoose'),
     Schema = mongoose.Schema,
-    mongoUri = process.env.MONGODB_URI || 'mogodb://localhost:27017/answers';
+    mongoUri = process.env.MONGODB_URI || 'mogodb://localhost/answers';
 
 mongoose.connect(mongoUri, {});
 
