@@ -21,6 +21,12 @@ router.get('/part-two', function (req, res, next) {
   });
 });
 
+router.get('/part-three', function (req, res, next) {
+  res.render('three', {
+    title: 'Pt. III'
+  });
+});
+
 router.post('/part-two', function (req, res, next) {
   var data = req.body;
   for (var key in data) {
@@ -32,7 +38,7 @@ router.post('/part-two', function (req, res, next) {
       if (error) throw error;
     });
   }
-  res.send('KK');
+  res.redirect('/part-three');
   
 });
 
