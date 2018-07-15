@@ -1,0 +1,63 @@
+extends layout
+
+block content
+    .section#partTwo(style="z-index:-9!important")
+        .container
+            .row
+                h4.header.center Resultados
+                h5.header.light.center Vamos a ver resultados tuyos vs los míos.
+                .col.s12.l6
+                    ul.collection.with-header
+                        li.collection-header #[h4 Lo que sabes de mi]
+                        each answer in answersPtOne
+                            li.collection-item.avatar
+                                span.title= answer.question
+                                p=answer.answer
+                .col.s12.l6
+                    ul.collection.with-header
+                        li.collection-header #[h4 Lo que se de ti]
+                         each answer in answersPtTwo
+                            li.collection-item.avatar
+                                span.title= answer.question
+                                p=answer.answer 
+                                if answer.answer === 'yes'
+                                    a.secondary-content #[i.material-icons check]
+                .col.s12.l6
+                    ul.collection.with-header
+                        li.collection-header #[h4 Lo se supone debes tener]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]
+                            li.collection-item.avatar
+                                span.title color favorito
+                                p Rojo
+                                a.secondary-content #[i.material-icons check]

@@ -7,67 +7,92 @@ block content
                 h4.header.center Segundo Test
                 h5.header.light.center Esto es todo lo que yo sé de ti, contesta si o no.
                 .col.s12.l6
-                form#formOne(method="POST" action="/part-three")
+                form#formTwo(method="POST" action="/part-three")
                     .row
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Color favorito - #[b Morado]
-                                label.col.s6.l3 #[input(required name="color_lila" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="color_lila" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="favorite_color_lila" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_color_lila" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Comida favorita - #[b Sushi & Pasta]
-                                label.col.s6.l3 #[input(required name="food_sushi" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="food_sushi" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="favorite_food_sushi" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_food_sushi" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Actividad favorita - #[b Cocinar y ser degustada]
-                                label.col.s6.l3 #[input(required name="activity_cook" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="activity_cook" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="favorite_activity_cook" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_activity_cook" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Fact - #[b Te vas de lado al caminar]
-                                label.col.s6.l3 #[input(required name="fact_walk" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="fact_walk" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="fact_caminar_lado" type="radio" value="yes")] #[span Correcto]
+                                label.col.s6.l3 #[input(required name="fact_caminar_lado" type="radio" value="no")] #[span Nelson]
                         .radio.input-field.col.s12.row
                             p
-                                label.col.s12 Miedo - #[b Alturas]
-                                label.col.s6.l3 #[input(required name="fear_heights" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="fear_heights" type="radio" value="no")] #[span No]
+                                label.col.s12 Fact - #[b Miedo a las Alturas]
+                                label.col.s6.l3 #[input(required name="fact_miedo_alturas" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="fact_miedo_alturas" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
-                                label.col.s12 Color de Cabello - #[b Chocolate]
-                                label.col.s6.l3 #[input(required name="hair_chocolate" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="hair_chocolate" type="radio" value="no")] #[span No]
+                                label.col.s12 Color de Cabello - #[b Chocolate/Rojizo]
+                                label.col.s6.l3 #[input(required name="fact_cabello_rojizo" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="fact_cabello_rojizo" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Fact - #[b Amas los supers]
-                                label.col.s6.l3 #[input(required name="fact_supers" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="fact_supers" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="fact_amor_supers" type="radio" value="yes")] #[span Simio]
+                                label.col.s6.l3 #[input(required name="fact_amor_supers" type="radio" value="no")] #[span Nel]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Refresco favorito - #[b Ginger Ale/Sprite/Dr. Pepper]
-                                label.col.s6.l3 #[input(required name="soda_ginger" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="soda_ginger" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="fact_soda_gingerAle" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="fact_soda_gingerAle" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
-                                label.col.s12 Bebida Favorita - #[b Gin]
-                                label.col.s6.l3 #[input(required name="drink_gin" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="drink_gin" type="radio" value="no")] #[span No]
+                                label.col.s12 Bebida Favorita - #[b Gin/Cerveza obscura]
+                                label.col.s6.l3 #[input(required name="favorite_drink_gin" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_drink_gin" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Dulces Favoritos - #[b Skittles/Chocolates con nueces & almendras]
-                                label.col.s6.l3 #[input(required name="candy_skittles" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="candy_skittles" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="favorite_candies_wonka" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_candies_wonka" type="radio" value="no")] #[span No]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Fact - #[b No chicharos]
-                                label.col.s6.l3 #[input(required name="fact_peas" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="fact_peas" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="fact_no_peas" type="radio" value="yes")] #[span Simona]
+                                label.col.s6.l3 #[input(required name="fact_no_peas" type="radio" value="no")] #[span Ño]
                         .radio.input-field.col.s12.row
                             p
                                 label.col.s12 Película Favorita - #[b Dama & Vagabundo/Libro de la Selva]
-                                label.col.s6.l3 #[input(required name="movie_ldy" type="radio" value="yes")] #[span Si]
-                                label.col.s6.l3 #[input(required name="movie_ldy" type="radio" value="no")] #[span No]
+                                label.col.s6.l3 #[input(required name="favorite_movie_lady" type="radio" value="yes")] #[span Si]
+                                label.col.s6.l3 #[input(required name="favorite_movie_lady" type="radio" value="no")] #[span No]
+                        .radio.input-field.col.s12.row
+                            p
+                                label.col.s12 Fact - #[b Gorras 4EVER]
+                                label.col.s6.l3 #[input(required name="fact_caps" type="radio" value="yes")] #[span Si++]
+                                label.col.s6.l3 #[input(required name="fact_caps" type="radio" value="no")] #[span Nop]
+                        .radio.input-field.col.s12.row
+                            p
+                                label.col.s12 Fact - #[b No te gustan los circos]
+                                label.col.s6.l3 #[input(required name="fact_no_circus" type="radio" value="yes")] #[span Aja]
+                                label.col.s6.l3 #[input(required name="fact_no_circus" type="radio" value="no")] #[span No]
+                        .radio.input-field.col.s12.row
+                            p
+                                label.col.s12 Fact - #[b No te gustan las thunderstorms]
+                                label.col.s6.l3 #[input(required name="fact_no_thunderstorms" type="radio" value="yes")] #[span Indeed]
+                                label.col.s6.l3 #[input(required name="fact_no_thunderstorms" type="radio" value="no")] #[span No]
+                        .radio.input-field.col.s12.row
+                            p
+                                label.col.s12 Fact - #[b No te gustan las galletas de frutas]
+                                label.col.s6.l3 #[input(required name="fact_no_fruit_coockies" type="radio" value="yes")] #[span Guacala, eso no se hace]
+                                label.col.s6.l3 #[input(required name="fact_no_fruit_coockies" type="radio" value="no")] #[span No]
+                        .radio.input-field.col.s12.row
+                            p
+                                label.col.s12 Fact - #[b Te gustan los abrazos]
+                                label.col.s6.l3 #[input(required name="fact_my_hugs" type="radio" value="yes")] #[span Solo tuyos]
+                                label.col.s6.l3 #[input(required name="fact_my_hugs" type="radio" value="no")] #[span Ninguno]
                         .col.s12(style="margin-top:20px")
                             button.waves-effect.waves-green.btn(type="submit") Submit
