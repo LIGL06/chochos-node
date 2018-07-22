@@ -1,5 +1,6 @@
 var express = require('express');
-var Answer = require('../models/answer');
+var Lili = require('../models/Lili');
+var Ivan = require('../models/Ivan');
 var router = express.Router();
 
 /* GET home page. */
@@ -28,16 +29,16 @@ router.get('/part-three', function (req, res, next) {
 });
 
 router.get('/part-four', function (req, res, next) {
-  Answer.find({}, function(error, answers){
-    if(error) throw error;
-    else  answersPtOne = answers;
-  }).limit(10);
-  Answer.find({}, function(error, answers){
-    if(error) throw error;
-    else  answersPtTwo = answers;
-  }).limit(17).sort('-created');
+  Ivan.find({}, function (error, ivans) {
+    if (error) throw error;
+    else answersPtOne = ivans;
+  }).limit(10).sort('question');
+  Lili.find({}, function (error, lilis) {
+    if (error) throw error;
+    else answersPtTwo = lilis;
+  }).limit(17).sort('question');
   res.render('four', {
-    title: 'Pt. III',
+    title: 'Pt. IV',
     answersPtOne: answersPtOne,
     answersPtTwo: answersPtTwo
   });
@@ -46,31 +47,32 @@ router.get('/part-four', function (req, res, next) {
 router.post('/part-two', function (req, res, next) {
   var data = req.body;
   for (var key in data) {
-    answer = new Answer({
+    ivan = new Ivan({
       question: key,
       answer: data[key]
     });
-    answer.save(function(error){
+    ivan.save(function (error) {
       if (error) throw error;
     });
   }
   res.redirect('/part-three');
-  
+
 });
 
 router.post('/part-three', function (req, res, next) {
-  var data = req.body;1
+  var data = req.body;
+  1
   for (var key in data) {
-    answer = new Answer({
+    lili = new Lili({
       question: key,
       answer: data[key]
     });
-    answer.save(function(error){
+    lili.save(function (error) {
       if (error) throw error;
     });
   }
   res.redirect('/part-four');
-  
+
 });
 
 module.exports = router;

@@ -10,54 +10,32 @@ block content
                     ul.collection.with-header
                         li.collection-header #[h4 Lo que sabes de mi]
                         each answer in answersPtOne
-                            li.collection-item.avatar
-                                span.title= answer.question
-                                p=answer.answer
+                            li.collection-item= answer.question 
+                                span 
+                                    | - 
+                                b= answer.answer
+
+                .col.s12.l6
+                    ul.collection.with-header
+                        li.collection-header #[h4 Lo que debe ser]
+                            li.collection-item Canción Favorita - #[b Sun & Moon - Above & Beyond]
+                            li.collection-item Color Favorito - #[b Verde]
+                            li.collection-item Director Favorito - #[b Rojo]
+                            li.collection-item Helado Favorito - #[b Todos Alav]
+                            li.collection-item Libro Favorito - #[b The Martian]
+                            li.collection-item Lugar favorito - #[b Chilling]
+                            li.collection-item Mejor Amigo - #[b Julio]
+                            li.collection-item Pandita favorito- #[b Verde]
+                            li.collection-item Pizza y Tacos con Piña - #[b Si]
+                            li.collection-item Quiero saber todo - #[b Obvio microbio]   
+
                 .col.s12.l6
                     ul.collection.with-header
                         li.collection-header #[h4 Lo que se de ti]
                          each answer in answersPtTwo
-                            li.collection-item.avatar
-                                span.title= answer.question
-                                p=answer.answer 
+                          li.collection-item= answer.question 
+                                span 
+                                    | - 
+                                b= answer.answer
                                 if answer.answer === 'yes'
                                     a.secondary-content #[i.material-icons check]
-                .col.s12.l6
-                    ul.collection.with-header
-                        li.collection-header #[h4 Lo se supone debes tener]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]
-                            li.collection-item.avatar
-                                span.title color favorito
-                                p Rojo
-                                a.secondary-content #[i.material-icons check]

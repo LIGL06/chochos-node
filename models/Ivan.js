@@ -13,7 +13,7 @@ db.once('open', () => {
     console.log(`listening...`);
 });
 
-var answerSchema = new Schema({
+var ivanSchema = new Schema({
     question:{
         type: String,
         required: true,
@@ -28,5 +28,5 @@ var answerSchema = new Schema({
     }
 });
 
-var Answer = mongoose.model('Answer', answerSchema);
-module.exports = Answer;
+var Ivan = mongoose.model('Ivan', ivanSchema);
+module.exports = Ivan;
